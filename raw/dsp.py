@@ -10,7 +10,14 @@ def generate_features(implementation_version, draw_graphs, raw_data, axes, sampl
     features = raw_data
     if (scale_axes != 1):
         features = raw_data * scale_axes
-
+    
+    try:
+        features = np.sqrt(
+                np.power(features[0], 2) + np.power(features[1], 2) + np.power(features[2], 2)
+                )
+    finally:
+        pass
+    
     return {
         'features': features,
         'graphs': [],

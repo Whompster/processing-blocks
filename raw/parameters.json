@@ -1,13 +1,13 @@
 {
     "info": {
-        "title": "Raw Data",
+        "title": "test_norm",
         "author": "Edge Impulse",
-        "description": "Use data without pre-processing. Useful if you want to use deep learning to learn features.",
-        "name": "Raw data",
+        "description": "Attempting to test performing norm of three signals",
+        "name": "test_norm",
         "preferConvolution": true,
         "convolutionColumns": "axes",
         "convolutionKernelSize": 7,
-        "cppType": "raw",
+        "cppType": "test_norm",
         "visualization": "dimensionalityReduction",
         "experimental": false,
         "hasFeatureImportance": true,
